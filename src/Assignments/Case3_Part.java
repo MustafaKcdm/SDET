@@ -1,4 +1,4 @@
-package Assigments;
+package Assignments;
 
 import Utility.BaseDriver;
 import org.junit.Test;
