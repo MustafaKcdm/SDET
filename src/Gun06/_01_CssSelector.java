@@ -1,4 +1,4 @@
-package Gun_06;
+package Gun06;
 
 import Utility.BaseDriver;
 

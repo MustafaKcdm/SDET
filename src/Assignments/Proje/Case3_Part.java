@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Proje;
 
 import Utility.BaseDriver;
 import org.junit.Test;

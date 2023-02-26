@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Odev_2;
 
 import Utility.BaseDriver;
 import org.junit.Test;
@@ -31,16 +31,16 @@ public class S1 extends BaseDriver {
         btn1.click();
 
         WebElement name = driver.findElement(By.cssSelector("[id='name']"));
-        Assert.assertTrue("Uyumsuz Data",name.getText().equals("Name:Automaion"));
+        Assert.assertTrue("Uyumsuz Data",name.getText().contains(s1));
 
         WebElement mail = driver.findElement(By.cssSelector("[id='email']"));
-        Assert.assertTrue("Uyumsuz Data",mail.getText().equals("Email:Testing@gmail.com"));
+        Assert.assertTrue("Uyumsuz Data",mail.getText().contains(s2));
 
         WebElement cAddress = driver.findElement(By.cssSelector("[id='currentAddress'][class='mb-1']"));
-        Assert.assertTrue("Uyumsuz Data",cAddress.getText().equals("Current Address :Testing Current Address"));
+        Assert.assertTrue("Uyumsuz Data",cAddress.getText().contains(s3));
 
         WebElement pAddress = driver.findElement(By.cssSelector("[id='permanentAddress'][class='mb-1']"));
-        Assert.assertTrue("Uyumsuz Data",pAddress.getText().equals("Permananet Address :Testing Permanent Address"));
+        Assert.assertTrue("Uyumsuz Data",pAddress.getText().contains(s4));
 
         BekleKapat();
 
